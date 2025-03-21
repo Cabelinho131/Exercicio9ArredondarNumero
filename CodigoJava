@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Programa {
+    public static void main(String[] args) {
+        Scanner Programa = new Scanner (System.in);
+
+        System.out.println("Digite um numero: ");
+        double numero = Programa.nextDouble();
+        
+        if (numero - Math.floor(numero) >= 0.5) {
+            numero = Math.ceil(numero);
+
+        } 
+        
+        else {
+            numero = Math.floor(numero);
+        }
+        
+        System.out.println("O numero arredondado é: " + numero);
+    }
+}
